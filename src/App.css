@@ -1,0 +1,290 @@
+html{
+  margin-left: 100px;
+  margin-right: 100px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #2c3e50;
+}
+
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  background-color: #2c3e50;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  top: 0; 
+  width: 1070px;
+  z-index: 1000; 
+  height: 50px;
+}
+
+.pro {
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 23px;
+}
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  /*padding: 0*/;
+  margin-right: 30px;
+ 
+}
+
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  
+  display: block;
+  font-weight: 700;
+}
+
+nav ul li:hover {
+  background-color: rgb(128, 128, 128, 0.5);
+  border-radius: 15px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* Main content */
+main {
+  margin-top: 80px; 
+  padding: 20px;
+  color: white;
+}
+
+/* Footer styling */
+footer {
+  background-color: wheat;
+  text-shadow: 2px 2px gray;
+  padding: 20px;
+  text-align: center;
+  height: 25px;
+  width: 61cap;
+  font-weight: 900;
+  border:2px solid red;
+  border-radius: 10px;
+  margin-left: 20px;
+  font-size: 23px;
+  color: black;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: red;
+}
+#home{
+  font-size: 40px;
+}
+#coder{
+  float: right;
+  height: 340px;
+  margin-left: 5px;
+  width: 255px;
+  border-radius: 20px;
+  animation: bounce 1s ease-in-out infinite;
+
+}
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(-50);
+  }
+  50% {
+      transform: translateY(20px); 
+  }
+}
+#hcontent{
+  margin-top: 20px;
+  line-height: 40px;
+  word-spacing: 3px;
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 18px;
+}
+.about{
+  margin-top: 20px;
+  line-height: 40px;
+  word-spacing: 3px;
+  text-align: left;
+  font-size: 18px;
+  /*margin-left: 13px;*/
+}
+#title,#interest,#project{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.skills{
+  margin-top: 40px;
+}
+.skills img{
+  height: 30px;
+  width: 40px;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  animation: scroll 1s linear infinite;
+}
+.skills img:hover{
+  animation: big 1s ease-in-out 0.5ms 1 normal forwards;
+  opacity: 0s;
+  
+}
+@keyframes scroll{
+  0%{
+      transform: translateX(0px);
+  }
+  50%{
+      transform: translateX(25px);
+  }
+  100%{
+      transform: translateX(3px);
+  }
+}
+@keyframes big{
+  0%{
+      transform: scaleX(0);
+  }
+  50%{
+      transform: scaleX(2) scaleY(2);
+  }
+  100%{
+      transform: scaleX(1) scaleY(1);
+  }
+}
+.frontend{
+  display: flex;
+}
+.one{
+  margin-top: 80px;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+.one :nth-child(1){
+  margin-left: -83px;
+}
+.database{
+  display: flex;
+}
+.two{
+  margin-top: 80px;
+  margin-left: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+.two :nth-child(1){
+  margin-left: -83px;
+}
+.programming{
+  display: flex;
+}
+.three{
+  margin-top: 80px;
+  margin-left: 0;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.three :nth-child(1){
+  margin-left: -240px;
+}
+.topic{
+  font-size: 19px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.res{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#resume a{
+  color: white;
+  text-decoration: none;
+}
+#resume a:hover{
+  color: black;
+}
+#resume{
+  height: 40px;
+  width: 220px;
+  background-color: black;
+  border-radius: 30px;
+  border: 2px solid red;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#resume:hover{
+  background-color: #fff;
+  color: black;
+  font-weight: 700;
+  width: 500px;
+  opacity: 2ms;
+  border: 4px solid black;
+}
+#project1 img{
+  height: 280px;
+  width: 336px;
+  overflow: hidden;
+}
+.card:hover{
+  zoom: 1.04;
+  cursor: pointer;
+}
+#project1{
+  margin-top: 70px;
+  display: flex;
+  gap: 20px;
+  height:470px ;
+}
+.card{
+  background-color: black;
+  border-radius: 20px;
+}
+
+.tags button{
+  height: 40px;
+  width: 80px;
+  background-color:rebeccapurple ;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: none;
+}
+.caption{
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 19px;
+}
+#pro-caption{
+  text-align: left;
+  padding: 0px 9px;
+}
