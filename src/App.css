@@ -288,3 +288,59 @@ footer a:hover {
   text-align: left;
   padding: 0px 9px;
 }
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  
+  header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+    nav{
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  .pro {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  .pro {
+    font-size: 18px;
+  }
+  nav ul {
+    display: none;
+    text-align: center;
+  }
+  
+  main {
+    padding: 0px;
+  }
+  footer {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .pro {
+    font-size: 16px;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    font-size: 16px;
+  }
+}
+    
